@@ -1,0 +1,311 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+header {
+	background: #BBBBBB;/* background cinza*/
+	padding: 20px 0; /* espaçamento interno de 20px*/
+}
+.caixa {
+	position: relative;
+	width: 940px;/*largura de 940*/
+	margin: 0 auto;/*centraliza o conteúdo da caixa*/
+}
+nav {
+	position: absolute; 
+	top: 110px;/*tenha uma distancia do topo de 110px*/
+	right: 0;/* tenha uma distância da direita de 0px, ou seja esteje colado na direita*/
+}
+
+nav li {
+	display: inline;/*pra ficar todos na mesma linha*/
+	margin: 0 0 0 15px /*posicionar a direita ....(cima, esquerda,baixo,direita)*/
+}
+
+nav a {
+	text-transform: uppercase;/*alterando o texto pra ficar todo em maiúsculo*/
+	color: #000000; /*adicionando uma cor preta*/
+	font-weight: bold;/*fonte em negrito*/
+	font-size: 22px; /*alterando o tamanho da fonte para um tamanho de 22px*/
+	text-decoration: none; /*alterando a propriedade decorativa do texto de modo que não fique sublinhado*/
+}
+nav a:hover {       /*pseudo-elementos*/
+	color: #C78C19;
+	text-decoration: underline;
+}
+
+
+
+
+.produtos li {
+	display: inline-block;/*colocando os itens um do lado do outro*/
+	text-align: center; /*centralizando o texto*/
+	width: 30%; /*botando os tamanhos deles aproximadamente deles iguais em 30%*/
+	vertical-align: top;/*nivelar os elementos pela linha de cima*/
+	margin: 0 1.5%;/* aumentando a distancia lateral entre cada elemento*/
+	padding: 30px 20px; /*aumentando o espaçamento INTERNO de 30px na vertical e 20px na horizontal*/
+	box-sizing: border-box;/*ratifica o tamanho de largura externa, e organiza o tanha interno em função do externo*/
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+.produtos li:hover{
+	border-color: #C78C19;/*a borda ficara acessa quando parssarmos o mouse por cima*/
+
+}	
+.produtos li:active {
+	border-color: #088C19; /*a borda ficara verde quando clicarmos em um produto*/
+}
+.produtos li:hover h2{
+	font-size: 34px;/*alterar o tamanho da fonte para 34px quando o mouse passar*/
+}
+
+.produtos h2 {
+	font-size: 30px;/*alterando a fonte do produto para o tamanho de 30px*/
+	font-weight: bold/*alterar a caracteristica da fonte para negrito*/
+
+}
+.produto-descricao {
+	font-size: 18px;
+
+}
+.produto-preco {
+	font-size: 22px;
+	font-weight: bold;
+	margin-top: 10px;/*ele vai se distancia a partir do topo de 10px*/
+}
+footer {
+	text-align: center;
+	background: url(bg.jpg);
+	padding: 40px 0;
+}
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0;
+}
+main {
+	
+}
+
+form {
+	margin: 40px 0;
+}
+
+form label, form legend {
+	display: block;
+	font-size: 20px;
+	margin: 0 0 10px
+}
+
+.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 50%;
+}
+
+.checkbox {
+	margin: 20px 0;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+}
+.enviar:hover {
+	background: darkorange;
+	
+	transform: scale(1.2) ;
+}
+
+table {
+	margin: 20px 40px;
+
+}
+
+thead {
+	background: #555555;
+	color: white;
+	font-weight: bold;
+}
+
+td, th {
+	border: 1px solid #000000;
+	padding: 8px 15px;
+}
+
+.banner {
+	width: 100%;
+}
+
+.titulo-principal {
+	text-align: center;/*centralizando o texto*/
+	font-size: 2em;/* colocando a fonte em 2 veses o tamanho padrão*/
+	margin: 0 0 1em;/*criando uma margem pra baixo*/
+	clear: left;
+
+
+}
+
+
+.principal {
+	padding: 3em 0; 
+	background: #FEFEFE;
+	width: 940px;
+	margin: 0 auto;
+
+}
+
+.principal p {
+	margin: 0 0 1em; /*criou uma margem pra baixo bem proporcional ao tamanho da fonte*/
+
+}
+ 
+.principal strong {
+	font-weight: bold;/*toda vez que aparecer 'bold' o texto ficara em negrito*/
+}
+
+.principal em {
+	font-style: italic;/*toda vez que aparecer 'em' o testo ficara com o estilo em italico*/
+}
+
+.utensilios {
+	width: 120px;
+	float: left;
+	margin:0 20px 20px 0; /*cima direita baixo esquerda*/
+}
+
+.mapa {
+	padding: 3em 0;
+	background: linear-gradient(#FEFEFE, #888888);
+}
+
+.mapa-conteudo {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.mapa p {
+	margin: 0 0 2em;
+	text-align: center;
+}
+.beneficios {
+	padding: 3em  0;
+	background: #888888;
+	}
+
+.conteudo-beneficios {
+	width: 640px;
+	margin: 0 auto;
+
+}
+
+.lista-beneficios {
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	
+
+}
+
+.itens {
+	line-height: 1.5;
+}
+
+.itens:first-child{
+	font-weight: bold;
+}
+
+.itens:before {
+	content: "★";
+}
+.imagem-beneficios {
+	width: 60%;
+	opacity: 1;
+	transition: 400ms;
+	box-shadow: 10px 10px 10px 0 #000000;/* x y espalhamentodasombra  oquantoelavaiseespalharalemdaborda cor*/
+}	
+
+.imagem-beneficios:hover {
+
+}
+
+
+.video {
+	width: 560px;
+	margin: 2em auto;
+}
+
+@media screen and (max-width: 480px){
+	.caixa, .principal, .conteudo-beneficios, .mapa-conteudo, .video  {
+		width: auto;
+		position: static;
+	}
+
+	h1{ /*centralisando a imagem*/
+		text-align: center;
+	}
+
+	nav {
+		position: static; /* trocando a posição absoluto para statico*/
+		
+	}
+	.lista-beneficios, .imagem-beneficios {
+		width: 100%
+	}
+
+	.produtos li { /* atuando nos produtos da pagina 'produto.html'*/
+	display: block;/*colocando os itens em baixo do outro*/
+	width: auto; /* colocando o largura para se adaptar automaticamente as laterais*/
+	margin: 10% 10%;/*afinando mais os produtos e tambem distanciando um do outro*/
+	}
+
+	main form {
+		padding: 0 2%;
+	}
+	.input-padrao {
+	display: block;
+	margin: 0 0 20px;
+	padding: 10px 25px;
+	width: 80%/*alterando o  tamanho do empty*/
+	}
+	
+	.enviar {
+	width: 60%;/*alterando o tamanho de 40% para 60%*/
+	margin: 0 70px; /*centralisando o botão*/
+	
+	}
+	
+	table {
+    	margin: 20px auto;/*alinhando a tabela no centro da tela*/
+  	}
+
+  	.principal {
+  		padding: 3em 1em;
+  		text-align: justify;
+  	}
+  	.mapa-conteudo  {
+  		margin: 0 10px;
+  	}
+  	.imagem-beneficios{
+  		margin: 20% 10%;
+  		width: 80%;
+  	}
+  	.video {
+  		padding: 10px 0 0 0;
+  		width: 80%;
+
+  	}
+  	.itens {
+    line-height: 1.5;
+    margin: 0 20%;
+	}
+}
